@@ -104,6 +104,13 @@ const categoryLayers = {
 };
 
 
+// Flat list of every tourist spot marker, built up as each
+// GeoJSON feature is processed below. Powers the search/filter
+// box in Section 10.5 without interfering with how the layer
+// control shows/hides whole category groups.
+const searchIndex = [];
+
+
 // ------------------------------------------------------------
 // 6. CREATE TOURIST MARKER
 // ------------------------------------------------------------
@@ -489,6 +496,17 @@ fetch('caraga_tourism.geojson')
 
                 categoryLayers[group]
                   .addLayer(layer);
+
+                // Index this spot for the search/filter box
+                // (Section 10.5) — keeps a flat, searchable list
+                // separate from the category layer groups so
+                // search doesn't fight with the layer control's
+                // own show/hide logic.
+                searchIndex.push({
+                  marker: layer,
+                  group: group,
+                  name: feature.properties.spot_name
+                });
 
               }
 
@@ -1399,6 +1417,117 @@ L.control.layers(
 
 
 // ============================================================
+// 10.5 SEARCH / FILTER ENGINE (BONUS — Slide 8, +3)
+// ============================================================
+// A plain search box, stacked directly under the layer control
+// on the right side. Typing filters the 21 tourist spot markers
+// by name or category — matching spots stay visible within
+// whichever categories are currently checked on; everything else
+// is temporarily hidden. Clearing the box restores normal
+// category checkbox behavior.
+
+const searchControl =
+  L.control({
+    position: 'topright'
+  });
+
+searchControl.onAdd = function() {
+
+  const container =
+    L.DomUtil.create(
+      'div',
+      'search-box-container'
+    );
+
+  container.innerHTML = `
+    <input
+      type="text"
+      id="spotSearchInput"
+      class="search-box-input"
+      placeholder="Search spots by name or category..."
+    />
+    <div
+      id="spotSearchCount"
+      class="search-box-count"
+    ></div>
+  `;
+
+  // Stop map clicks/drags from firing when interacting with
+  // the search box (standard Leaflet control practice).
+  L.DomEvent.disableClickPropagation(container);
+  L.DomEvent.disableScrollPropagation(container);
+
+  return container;
+
+};
+
+searchControl.addTo(map);
+
+
+document
+  .getElementById('spotSearchInput')
+  .addEventListener(
+    'input',
+    function(event) {
+
+      const term =
+        event.target.value
+          .trim()
+          .toLowerCase();
+
+      let matchCount = 0;
+
+      searchIndex.forEach(function(item) {
+
+        const matches =
+          term === '' ||
+          item.name.toLowerCase().includes(term) ||
+          item.group.toLowerCase().includes(term);
+
+        const categoryGroup =
+          categoryLayers[item.group];
+
+        if (matches) {
+
+          categoryGroup.addLayer(item.marker);
+
+          if (term !== '') {
+
+            matchCount = matchCount + 1;
+
+          }
+
+        } else {
+
+          categoryGroup.removeLayer(item.marker);
+
+        }
+
+      });
+
+      const countDisplay =
+        document.getElementById(
+          'spotSearchCount'
+        );
+
+      if (term === '') {
+
+        countDisplay.textContent = '';
+
+      } else {
+
+        countDisplay.textContent =
+          matchCount + ' spot' +
+          (matchCount === 1 ? '' : 's') +
+          ' found';
+
+      }
+
+    }
+  );
+
+
+// ============================================================
 // 11. LEGEND
 // ============================================================
 
@@ -1622,6 +1751,49 @@ mapStyles.innerHTML = `
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     max-width: 220px;
+
+  }
+
+
+  .search-box-container {
+
+    background: white;
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+    margin-top: 6px;
+
+  }
+
+
+  .search-box-input {
+
+    width: 230px;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+
+  }
+
+
+  .search-box-input:focus {
+
+    border-color: #2E7D32;
+
+  }
+
+
+  .search-box-count {
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #666;
+    margin-top: 4px;
+    min-height: 14px;
 
   }
 
