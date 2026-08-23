@@ -2,7 +2,7 @@
 
 An interactive web map for planning a family weekend trip around the Caraga Region, built with Leaflet.js and GeoJSON. Answers the question: *"Where should we take the family this weekend?"*
 
-**Live demo:** blank
+**Live demo:** https://judgekun97.github.io/Caraga-Tourism-Project/
 
 ![Caraga Tourism Map preview](screenshot.png)
 *(add a screenshot of the live map here before submitting)*
@@ -26,6 +26,7 @@ An interactive web map for planning a family weekend trip around the Caraga Regi
 - **Rich popups** on every spot — name, description, entrance fee, best season to visit, and family-friendly notes
 - **Hover-to-highlight** on province boundaries, **click-to-zoom** to fit any province
 - **Click-to-open popups** on markers that stay open until manually closed, with a fly-to-location zoom animation
+- **8 suggested day-trip routes** (bonus feature) — color-coded LineStrings connecting nearby spots, starting from Guingona Park (mainland) or Sayak Airport (Siargao), each independently toggleable
 - **Layer control** to toggle basemaps, boundaries, and each spot category independently
 
 ---
@@ -41,8 +42,8 @@ An interactive web map for planning a family weekend trip around the Caraga Regi
 ## Known Issues
 
 - Some entrance fees and visitor notes are unofficial estimates pulled from Google Maps reviews rather than a published government source, since official fee listings don't exist yet for every spot on the map. These are marked as approximate.
-- We're still finalizing the exact source citation for a few individual spots and haven't fully locked down which destinations belong on a single suggested day-trip route.
 - The provincial boundary layer depends on a live external DENR server; a local GeoJSON fallback is bundled so the map still works if that server is briefly unavailable.
+- The starting coordinates for Guingona Park and Sayak Airport were sourced from OpenStreetMap/Wikipedia rather than an official government listing, since they're used as trip-planning reference points rather than tourist spot data itself.
 
 ---
 
@@ -62,7 +63,7 @@ For a group planning to hit a few spots in one weekend:
 - [Leaflet.js](https://leafletjs.com/) — mapping library
 - GeoJSON — spot and boundary data
 - Vanilla JavaScript — no frameworks
-- Hosted on [Netlify](https://www.netlify.com/)
+- Hosted on [GitHub Pages](https://pages.github.com/)
 
 ---
 
@@ -70,11 +71,11 @@ For a group planning to hit a few spots in one weekend:
 
 Opening `index.html` by double-clicking it will **not** work — browsers block local file fetches (`file://`) needed to load the GeoJSON data. Use one of these instead:
 
-1. **Netlify Drop** (recommended, no install) — drag the project folder onto [app.netlify.com/drop](https://app.netlify.com/drop)
+1. **View the live site instead** — https://judgekun97.github.io/Caraga-Tourism-Project/
 2. **Python** (if installed) — run `python -m http.server 8000` in the project folder, then open `http://localhost:8000`
 
 ---
 
 ## Credits
 
-Map tiles and data courtesy of OpenStreetMap contributors, CartoDB, and the DENR. Built for our Platform Technologies / Web GIS midterm exam, AY 2025–2026.
+Map tiles and data courtesy of OpenStreetMap contributors, CartoDB, and the DENR. Guingona Park and Sayak Airport coordinates sourced from OpenStreetMap and Wikipedia. Built for our Platform Technologies / Web GIS midterm exam, AY 2025–2026.
