@@ -1,0 +1,447 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1,
+        "spot_name": "Cloud 9 Surfing Site",
+        "category": "Beach",
+        "group": "Beaches & Islands",
+        "description": "Siargao's internationally recognized surfing destination in General Luna, known for its powerful reef break, boardwalk and sunset views. DOT identifies Cloud 9 as one of Siargao's signature attractions and the site of the International Siargao Surfing Cup.",
+        "entrance_fee": "No known entrance fee; ₱50–₱100 reported for the boardwalk.",
+        "best_season": "August–November for the strongest and most consistent surf. For general sightseeing, conditions are less dependent on surf season.",
+        "family_friendly": "Boardwalk/viewing area available. The reef is shallow and the main break is recommended for experienced surfers rather than beginners. A government-led tourist first-aid facility project has also been developed around General Luna/Cloud 9 to improve visitor safety."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.16431939223877,
+          9.813185676384556
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2,
+        "spot_name": "Cagwait White Beach",
+        "category": "Beach",
+        "group": "Beaches & Islands",
+        "description": "A white-sand beach in Cagwait, Surigao del Sur, characterized by coconut trees, greenery and coastal waters suitable for swimming and other beach activities. DOT describes it as a must-visit attraction in Surigao del Sur.",
+        "entrance_fee": "₱20 per person environmental fee.",
+        "best_season": "Dryer months are preferable for beach activities, but a specific official month range was not located in the sources checked.",
+        "family_friendly": "Basic amenities and local food vendors are available; facilities are more limited than major resort beaches, so bringing necessities is advisable."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.30932626375237,
+          8.919117906649605
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3,
+        "spot_name": "Mabua Pebble Beach",
+        "category": "Beach",
+        "group": "Beaches & Islands",
+        "description": "A distinctive pebble-covered beach near Surigao City rather than a conventional fine-sand beach. It is also known as a sunset-viewing location and is relatively close to the city.",
+        "entrance_fee": "Free. Cottage ₱300–₱500 per day.",
+        "best_season": "Dry and sunny weather, particularly for sunset viewing.",
+        "family_friendly": "Accessible by tricycle or habal-habal from Surigao City; some areas have cottages and nearby accommodation."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.4384046422642,
+          9.813028126596688
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4,
+        "spot_name": "Daku Island",
+        "category": "Island",
+        "group": "Beaches & Islands",
+        "description": "One of Siargao's famous Tri-Island destinations together with Guyam and Naked Island. DOT describes Daku as having a long stretch of fine sand and clear water.",
+        "entrance_fee": "₱50–₱100 per person. Cottage rental ₱250–₱300.",
+        "best_season": "Generally April–October is favorable according to a beach-weather source, although sea conditions can change.",
+        "family_friendly": "Boat access only. Commonly visited as part of the Siargao island-hopping tour; swimming and snorkeling are common activities."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.15911941709355,
+          9.741211183455816
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5,
+        "spot_name": "Guyam Island",
+        "category": "Island",
+        "group": "Beaches & Islands",
+        "description": "A small island forming part of Siargao's Tri-Island group. DOT describes it as the smallest of the three and notes its marine life and suitability for swimming and snorkeling.",
+        "entrance_fee": "₱30 per person. Docking fee up to ₱10–₱50. Cottage ₱350.",
+        "best_season": "Generally favorable during calmer and drier weather.",
+        "family_friendly": "Boat access; snorkeling and swimming are common activities. Island-hopping operators normally combine Guyam with Daku and Naked Island."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.16776295168901,
+          9.765123064622898
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6,
+        "spot_name": "Britania Group of Islets",
+        "category": "Island",
+        "group": "Beaches & Islands",
+        "description": "A group of white-sand islands and islets in San Agustin, Surigao del Sur, characterized by aquamarine waters, limestone formations and coastal scenery. Access first on Britania Beach Resorts before going to visit the islets.",
+        "entrance_fee": "₱30–₱50 per person, ₱30 per vehicle parking fee, and ₱1,500–₱2,000 for small to medium boats for up to 10–15 guests.",
+        "best_season": "Dryer months and calmer sea conditions are preferable for island hopping.",
+        "family_friendly": "Island hopping, swimming and snorkeling are common. Boat access and weather/sea conditions affect accessibility."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.19651913924066,
+          8.666311177415425
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7,
+        "spot_name": "Tinuy-an Falls",
+        "category": "Waterfall",
+        "group": "Waterfalls & Rivers",
+        "description": "A large multi-tiered waterfall in Bislig City, Surigao del Sur. It is widely recognized as one of Caraga's major natural attractions and is commonly called the Little Niagara Falls of the Philippines.",
+        "entrance_fee": "₱50–₱55 per adult. Children free. Parking fee ₱10–₱20 depending on vehicle type.",
+        "best_season": "Dryer weather is preferable, especially for easier road access and outdoor activities.",
+        "family_friendly": "Located in Barangay Burboanan, about 18 km from Bislig City proper. Visitors can use bamboo rafts to approach the waterfall."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.22830907049395,
+          8.17200038364854
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 8,
+        "spot_name": "Bega Falls",
+        "category": "Waterfall",
+        "group": "Waterfalls & Rivers",
+        "description": "A natural waterfall attraction included among the Caraga destinations in the working dataset.",
+        "entrance_fee": "₱70 per adult. ₱35 per child.",
+        "best_season": "Dryer months, subject to local weather and water conditions.",
+        "family_friendly": "A hidden gem. It requires a long hike, so prepare your strength, but the view is worth the effort."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.97582084917065,
+          8.699917872635769
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 9,
+        "spot_name": "Sian Falls",
+        "category": "Waterfall",
+        "group": "Waterfalls & Rivers",
+        "description": "A natural waterfall attraction in the Caraga tourism area.",
+        "entrance_fee": "₱10 per person and ₱100 cottage rental.",
+        "best_season": "Dryer months, subject to rainfall and local water conditions.",
+        "family_friendly": "Access and facilities require confirmation from the local tourism authority before publishing as verified information."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.29544082004726,
+          8.250353473557206
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 10,
+        "spot_name": "Hinatuan Enchanted River",
+        "category": "River / Spring",
+        "group": "Waterfalls & Rivers",
+        "description": "A deep, clear-blue spring-fed river in Hinatuan, Surigao del Sur, flowing toward the Philippine Sea. DOT describes it as one of Surigao del Sur's major natural attractions.",
+        "entrance_fee": "₱50 per person collected at the mandatory drop-off point in Poblacion. Non-residents: ₱100 adults, ₱80 seniors/PWDs, and ₱30 children under 4 feet. Hinatuan residents: ₱30 adults, ₱20 seniors, and ₱15 children under 4 feet.",
+        "best_season": "Dryer weather is preferable, although the attraction operates according to local conditions and regulations.",
+        "family_friendly": "Visitor management, safety/security, road maintenance and waste management are covered by the municipal tourism-fee system."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.35471292970942,
+          8.458842717313662
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11,
+        "spot_name": "Maasin River Bridge",
+        "category": "River",
+        "group": "Waterfalls & Rivers",
+        "description": "A scenic river in Siargao associated with the Maasin Bridge area and river-tour experiences.",
+        "entrance_fee": "₱20–₱50 per person to access the river, swimming area and jumping platform.",
+        "best_season": "Dryer weather for easier road and river access.",
+        "family_friendly": "River tours and boat experiences are available; the area can become busy during popular Siargao tours."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.05619983734702,
+          9.821435651986649
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12,
+        "spot_name": "Lake Mainit",
+        "category": "Inland Water / Lake",
+        "group": "Waterfalls & Rivers",
+        "description": "A major freshwater lake shared by communities in Agusan del Norte and Surigao del Norte. Government sources identify it as Caraga's widest lake and an important ecological resource.",
+        "entrance_fee": "Free, unless specific local amenities charge small entrance fees of around ₱25.",
+        "best_season": "Dryer months are generally easier for outdoor sightseeing, although activities vary by lakeshore municipality.",
+        "family_friendly": "The lake spans multiple municipalities, so facilities, access points and local fees vary by location."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.52266352494117,
+          9.444384765114965
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13,
+        "spot_name": "Alicia's Ridge Eco Park",
+        "category": "Mountain / Ridge",
+        "group": "Mountains & Nature",
+        "description": "An outdoor destination in Buenavista, Agusan del Norte, offering ridge scenery and activities including horseback riding, camping and picnicking.",
+        "entrance_fee": "₱80 adults, ₱70 senior citizens and PWDs, and ₱60 children aged 3–11.",
+        "best_season": "Dryer months are preferable for ridge hiking and outdoor activities.",
+        "family_friendly": "Camping and outdoor activities are available; weather should be checked before hiking."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.43601211349429,
+          8.865222097675085
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 14,
+        "spot_name": "Kitcharao View Deck",
+        "category": "Mountain / Viewpoint",
+        "group": "Mountains & Nature",
+        "description": "A scenic elevated viewpoint included in the Kitcharao tourism destination set.",
+        "entrance_fee": "₱25 per person. Zipline: 1K ₱225 and 300m ₱425.",
+        "best_season": "Dryer weather for better visibility.",
+        "family_friendly": "Family-friendly destination offering scenic views, a 1-kilometer zipline, fresh air, picnic areas and local food options. Uneven paths and stairs may present accessibility challenges."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.56501832827959,
+          9.445539936616184
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 15,
+        "spot_name": "Mt. Mayapay View Deck",
+        "category": "Mountain / Viewpoint",
+        "group": "Mountains & Nature",
+        "description": "A viewpoint associated with Mount Mayapay and panoramic scenery around Butuan.",
+        "entrance_fee": "₱25 per person.",
+        "best_season": "Dryer months and clear-weather days for better visibility.",
+        "family_friendly": "Very family-friendly because newly paved roads let cars drive right up to the scenic spot without a hard hike."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.48780731005222,
+          8.879483313711287
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 16,
+        "spot_name": "Sugba Blue Lagoon",
+        "category": "Nature / Lagoon",
+        "group": "Mountains & Nature",
+        "description": "A major nature and adventure destination in Del Carmen, Siargao, known for its lagoon environment and water-based activities.",
+        "entrance_fee": "Budget around ₱100 for entrance plus a share of the ₱1,200–₱1,500 group boat transfer. Roughly ₱300–₱500 per person when splitting a boat four or five ways. Paddleboard or kayak rental is extra.",
+        "best_season": "Dryer weather and calmer sea conditions are preferable for boat travel.",
+        "family_friendly": "Access is by boat; activities include swimming and cliff jumping. Boat/package costs vary depending on group size and operator."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.90025918465511,
+          9.906336160355512
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 17,
+        "spot_name": "Agusan Marsh Wildlife Sanctuary",
+        "category": "Nature / Wildlife",
+        "group": "Mountains & Nature",
+        "description": "One of the Philippines' ecologically significant wetlands, located in the Agusan Basin. It supports wetland ecosystems, wildlife and migratory birds.",
+        "entrance_fee": "₱100 per person at the municipal or DENR/PAMO desk. Small boat rental for 1–5 passengers: ₱3,500 standard return trip. Large boat up to 10 passengers: ₱5,000 round-trip. Canoe rental: approximately ₱200 per hour.",
+        "best_season": "Season-dependent. Migratory birds are particularly notable during cooler and drier months, while rainy periods change the marsh's water landscape.",
+        "family_friendly": "A rugged 3–4 hour remote marsh adventure with no electricity or Wi-Fi. Bring your own water. Guests must wear life jackets on wooden canoes and watch children closely."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.86719414627402,
+          8.316152592127343
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 18,
+        "spot_name": "Bood Eco Park",
+        "category": "Nature / Eco-Park",
+        "group": "Mountains & Nature",
+        "description": "An eco-tourism destination included in the Butuan-area tourism inventory.",
+        "entrance_fee": "Not publicly verified.",
+        "best_season": "Dryer weather for outdoor activities.",
+        "family_friendly": "Good for picnics, nature walks and historical sightseeing. Visitors should watch small children closely around its rustic hanging bridge."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.49272297147148,
+          8.951889277666512
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 19,
+        "spot_name": "Balanghai Boat Replica Site",
+        "category": "Heritage",
+        "group": "Heritage & Culture",
+        "description": "A cultural and archaeological attraction associated with the ancient balangay/Butuan boats. Government historical material notes that nine balangays were unearthed in Butuan in the late 1970s.",
+        "entrance_fee": "Free.",
+        "best_season": "Year-round, with dry weather more comfortable for outdoor sightseeing.",
+        "family_friendly": "Important archaeological and maritime-history attraction connected with Butuan's precolonial trading history. A guard may need to open the gate to enter and walk through the site."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.54045328088014,
+          8.96694904431361
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 20,
+        "spot_name": "Banza Church Ruins",
+        "category": "Heritage",
+        "group": "Heritage & Culture",
+        "description": "Historic church ruins associated with the Spanish-era history of Butuan and the former settlement of Banza.",
+        "entrance_fee": "Free.",
+        "best_season": "Year-round; dry weather is preferable for outdoor viewing.",
+        "family_friendly": "Heritage site. Visitors should respect the ruins and any local preservation restrictions."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.53837499139844,
+          8.972422496251488
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 21,
+        "spot_name": "Magellan's Anchorage Landing Site",
+        "category": "Heritage",
+        "group": "Heritage & Culture",
+        "description": "A historical site associated with the Magellan expedition and the maritime history of the Caraga area. The site is also associated with Masao Beach.",
+        "entrance_fee": "₱20 per person. Optional swimming shed/spot rental approximately ₱100–₱300. Vehicle parking around ₱100.",
+        "best_season": "Year-round, with dry weather preferred for outdoor sightseeing.",
+        "family_friendly": "An accessible public black-sand beach and family park. Locals and tourists mainly use it as a quick stop, preferring nearby Masao Beach for swimming."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.48429682574522,
+          8.99952152570162
+        ]
+      }
+    }
+
+  ]
+}
