@@ -5,7 +5,6 @@ An interactive web map for planning a family weekend trip around the Caraga Regi
 **Live demo:** https://judgekun97.github.io/Caraga-Tourism-Project/
 
 ![Caraga Tourism Map preview](screenshot.png)
-*(add a screenshot of the live map here before submitting)*
 
 ---
 
@@ -27,6 +26,7 @@ An interactive web map for planning a family weekend trip around the Caraga Regi
 - **Hover-to-highlight** on province boundaries, **click-to-zoom** to fit any province
 - **Click-to-open popups** on markers that stay open until manually closed, with a fly-to-location zoom animation
 - **8 suggested day-trip routes** (bonus feature) — color-coded LineStrings connecting nearby spots, starting from Guingona Park (mainland) or Sayak Airport (Siargao), each independently toggleable
+- **Search/filter box** (bonus feature) — live-filters spots by name or category as you type, with a result count
 - **Layer control** to toggle basemaps, boundaries, and each spot category independently
 
 ---
